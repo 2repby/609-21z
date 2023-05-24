@@ -6,8 +6,7 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css" integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Document</title>
     <style>
         body{
@@ -58,6 +57,7 @@
             border-radius: 8px;
             border-width: 1px;
             border-color: green;
+            width: 120px;
         }
 
     </style>
@@ -93,14 +93,8 @@
             </div>
             <div class="price">
                 <?=$row['price']?>
-                <i class="fas fa-ad"></i>
-                <input type="button" class="bin-button" value="В корзину"/>
+            <button class="bin-button"><i class="fa fa-cart-plus"></i>&nbsp&nbsp В корзину</button>
             </div>
-
-
-
-
-
         </div>
 <?php
 
