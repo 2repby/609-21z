@@ -1,3 +1,6 @@
+<?php
+require "dbconnect.php";
+?>
 <!doctype html>
 <html lang="en">
 <head>
@@ -67,16 +70,7 @@
 
     <?php
     echo "<h2>Интернет-магазин</h2>";
-    try {
-        $conn = new PDO("mysql:host=localhost;dbname=myshop;charset=utf8mb4", 'root', '');
-        // set the PDO error mode to exception
-        $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-    }
-    catch(PDOException $e) {
-        echo "Ошибка подключения к БД: " . $e->getMessage(), $e->getCode( );
-        die();
-    }
     $result = $conn->query("SELECT * FROM items");
 
     while ($row = $result->fetch()){
